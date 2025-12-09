@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaxCheck UAE – فحص ضريبة الشركات في الإمارات</title>
+  <meta name="description" content="خدمة فحص أولي لوضع شركتك مع ضريبة الشركات في الإمارات – تقرير مكتوب خلال 48 ساعة.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter',sans-serif;line-height:1.7;color:#111827;background:#ffffff;}
+    [dir="rtl"]{text-align:right;}
+    [dir="ltr"]{text-align:left;}
+
+    .container{max-width:1100px;margin:0 auto;padding:0 16px;}
+
+    header{position:sticky;top:0;z-index:10;background:#ffffff;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);padding:14px 0;}
+    .header-content{display:flex;justify-content:space-between;align-items:center;gap:12px;}
+    .logo{font-size:22px;font-weight:700;color:#0052CC;}
+    .tagline{font-size:12px;color:#6B7280;margin-top:-4px;}
+    .header-right{display:flex;align-items:center;gap:16px;}
+    .support-email{font-size:13px;color:#0052CC;text-decoration:none;font-weight:600;}
+    .support-email:hover{text-decoration:underline;}
+    .lang-toggle{border:none;background:#F3F4F6;padding:6px 14px;border-radius:999px;
+      font-size:12px;font-weight:600;cursor:pointer;}
+
+    .hero{background:linear-gradient(135deg,#0052CC,#003B99);color:white;padding:70px 0;}
+    .hero h1{font-size:30px;font-weight:700;margin-bottom:12px;}
+    .hero p{font-size:16px;opacity:0.96;margin-bottom:20px;}
+    .hero-sub{font-size:14px;opacity:0.9;margin-bottom:28px;}
+    .cta-button{display:inline-block;background:#22C55E;color:white;
+      padding:12px 32px;border-radius:999px;font-weight:600;
+      text-decoration:none;font-size:15px;}
+    .cta-button:hover{background:#16A34A;}
+
+    section{padding:60px 0;}
+    h2{font-size:24px;color:#0052CC;font-weight:700;margin-bottom:16px;text-align:center;}
+    .section-content{max-width:780px;margin:0 auto;font-size:15px;color:#111827;}
+    .section-content p{margin-bottom:10px;}
+
+    .problem-list,.solution-list{list-style:none;margin-top:18px;}
+    .problem-list li,.solution-list li{
+      background:#F9FAFB;border-radius:10px;padding:10px 12px;margin-bottom:8px;font-size:14px;
+    }
+    .problem-list li::before{content:"❌ ";margin-inline-end:6px;}
+    .solution-list li::before{content:"✅ ";margin-inline-end:6px;}
+
+    .target-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;margin-top:20px;}
+    .target-card{background:#F9FAFB;border-radius:10px;padding:16px;text-align:center;font-size:14px;}
+    .target-card h3{font-size:15px;color:#0052CC;margin-bottom:6px;}
+
+    .price-box{background:#F9FAFB;border-radius:16px;padding:28px;text-align:center;
+      max-width:420px;margin:24px auto;box-shadow:0 8px 24px rgba(15,23,42,0.08);}
+    .price{font-size:40px;font-weight:700;color:#0052CC;margin:10px 0;}
+    .price span{font-size:18px;}
+    .report-lang{font-size:13px;color:#6B7280;margin-bottom:4px;}
+    .secure-payment{font-size:12px;color:#6B7280;margin-top:10px;}
+    .no-docs{font-size:12px;color:#4B5563;margin-top:10px;}
+
+    .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:18px;margin-top:24px;}
+    .step{text-align:center;font-size:14px;}
+    .step-number{width:40px;height:40px;border-radius:999px;background:#0052CC;color:white;
+      display:flex;align-items:center;justify-content:center;font-weight:700;margin:0 auto 8px;}
+
+    .faq-item{background:#F9FAFB;border-radius:12px;padding:14px 16px;margin-top:12px;font-size:14px;}
+    .faq-question{color:#0052CC;font-weight:600;margin-bottom:4px;font-size:14px;}
+
+    .disclaimer{background:#FEF3C7;border-radius:12px;border:1px solid #FACC15;
+      padding:16px;font-size:13px;margin-top:10px;}
+    .last-updated{font-size:11px;color:#6B7280;margin-top:6px;text-align:center;}
+
+    footer{background:#111827;color:white;padding:26px 0;margin-top:40px;font-size:13px;}
+    footer a{color:#E5E7EB;text-decoration:none;margin:0 6px;}
+    footer a:hover{text-decoration:underline;}
+
+    .whatsapp-btn{
+      position:fixed;bottom:18px;right:18px;background:#22C55E;color:white;
+      padding:9px 14px;border-radius:999px;font-size:12px;font-weight:600;
+      text-decoration:none;box-shadow:0 4px 14px rgba(34,197,94,0.45);
+    }
+
+    @media (max-width:640px){
+      .hero{padding:46px 0;}
+      .hero h1{font-size:22px;}
+      .hero p{font-size:14px;}
+      section{padding:46px 0;}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div>
+        <div class="logo">🇦🇪 TaxCheck UAE</div>
+        <p class="tagline">Corporate Tax · Free Zone · Small Business</p>
+      </div>
+      <div class="header-right">
+        <a href="mailto:support@fintechtech.com" class="support-email">support@fintechtech.com</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>هل شركتك خاضعة لضريبة الشركات في الإمارات؟</h1>
+      <p>فحص أولي واضح لوضعك الضريبي دون تعقيد قانوني</p>
+      <p class="hero-sub">تقرير مكتوب خلال 48 ساعة بصيغة PDF</p>
+      <a href="#price" class="cta-button">ابدأ الفحص الآن</a>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section id="problem">
+    <div class="container">
+      <h2>المشكلة</h2>
+      <div class="section-content">
+        <p>مع تغيّر قوانين ضريبة الشركات في الإمارات، كثير من أصحاب الأعمال لا يعرفون بدقة:</p>
+        <ul class="problem-list">
+          <li>هل شركتهم خاضعة أصلاً لضريبة الشركات أم لا؟</li>
+          <li>هل وضع المنطقة الحرة يمنحهم نسبة 0% أو 9%؟</li>
+          <li>هل يجب التسجيل في الهيئة الاتحادية للضرائب؟ ومتى؟</li>
+          <li>الخوف من الغرامات والتأخير، مع ارتفاع تكلفة الاستشارات التقليدية.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section id="solution">
+    <div class="container">
+      <h2>الحل مع TaxCheck</h2>
+      <div class="section-content">
+        <p>نقدّم لك فحصاً أولياً مبنياً على معلومات شركتك ووضعها في الإمارات:</p>
+        <ul class="solution-list">
+          <li>تقرير مكتوب يحدد إن كانت شركتك خاضعة لضريبة الشركات أم لا.</li>
+          <li>توضيح نسبة الضريبة المتوقعة: 0% أو 9% وفق المعطيات المتاحة.</li>
+          <li>شرح مبسّط لوضع المنطقة الحرة وتأثيره على ضريبة الشركات.</li>
+          <li>خطوات عملية واضحة: ماذا تفعل خلال 30–60 يوماً القادمة.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO -->
+  <section id="who">
+    <div class="container">
+      <h2>لمن هذه الخدمة؟</h2>
+      <div class="section-content">
+        <div class="target-grid">
+          <div class="target-card">
+            <h3>🏢 شركات المناطق الحرة</h3>
+            <p>يريدون التأكد إن كانوا مؤهلين فعلاً لنسبة 0% أم لا.</p>
+          </div>
+          <div class="target-card">
+            <h3>🏪 الشركات الصغيرة</h3>
+            <p>إيرادات أقل من 3 مليون درهم وتريد فهم الالتزامات بدون تعقيد.</p>
+          </div>
+          <div class="target-card">
+            <h3>🚀 الشركات الناشئة</h3>
+            <p>أول مرة تتعامل مع ضريبة الشركات وتحتاج صورة أوّلية واضحة.</p>
+          </div>
+          <div class="target-card">
+            <h3>👔 المستثمرون الأجانب</h3>
+            <p>لديهم شركة في الإمارات ويريدون فهم الوضع الضريبي بسرعة.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section id="receive">
+    <div class="container">
+      <h2>ماذا ستحصل عليه؟</h2>
+      <div class="section-content">
+        <ul class="solution-list">
+          <li>تقرير PDF مكتوب باللغة العربية أو الإنجليزية.</li>
+          <li>تحديد: خاضع / غير خاضع مع توضيح السبب.</li>
+          <li>تقدير نسبة الضريبة المتوقعة: 0% أو 9% وفق وضعك.</li>
+          <li>إجابة واضحة: هل تحتاج التسجيل في الهيئة الاتحادية للضرائب؟</li>
+          <li>قائمة خطوات عملية مقترحة للفترة القادمة (بدون إلزام قانوني).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE -->
+  <section id="price">
+    <div class="container">
+      <h2>السعر</h2>
+      <div class="price-box">
+        <p class="report-lang">فحص أولي لوضع ضريبة الشركات في الإمارات</p>
+        <div class="price">199 <span>درهم</span></div>
+        <p>دفعة واحدة – تقرير مكتوب خلال 48 ساعة</p>
+        <a href="#" class="cta-button">سيتم تفعيل الدفع الإلكتروني قريباً</a>
+        <p class="secure-payment">الدفع سيكون عبر بوابة Stripe الآمنة.</p>
+        <p class="no-docs">لا نطلب مستندات حالياً – فقط بيانات عامة عن الشركة.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="container">
+      <h2>كيف تعمل الخدمة؟</h2>
+      <div class="section-content">
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>طلب الخدمة</h3>
+            <p>تقوم بطلب الفحص ودفع الرسوم عند تفعيل الدفع.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>إرسال بيانات بسيطة</h3>
+            <p>نطلب منك معلومات عامة عن شركتك ونشاطك والمناطق الحرة إن وجدت.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>تحليل أولي</h3>
+            <p>نراجع البيانات ونطبّق شروط ضريبة الشركات قدر الإمكان.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>تقرير PDF</h3>
+            <p>يصلك تقرير مكتوب خلال 48 ساعة مع الملخص والتوصيات.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <h2>الأسئلة الشائعة</h2>
+      <div class="section-content">
+        <div class="faq-item">
+          <div class="faq-question">هل تعتبر هذه الخدمة استشارة ضريبية رسمية؟</div>
+          <p>لا. هذه خدمة فحص أولي وإرشادي فقط ولا تغني عن استشارة محاسب قانوني أو مستشار ضريبي معتمد.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">هل يمكن الاعتماد على التقرير أمام الجهات الرسمية؟</div>
+          <p>التقرير مخصص لمساعدتك على فهم وضعك بشكل أفضل، ولا يُعتَبر مستنداً رسمياً يمكن تقديمه للجهات الحكومية.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">هل توجد سياسة استرجاع؟</div>
+          <p>بمجرد البدء في إعداد التقرير لا يمكن استرجاع المبلغ، لأن الخدمة رقمية ومخصصة لكل عميل.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <section id="disclaimer">
+    <div class="container">
+      <h2>تنويه مهم</h2>
+      <div class="section-content">
+        <div class="disclaimer">
+          <p><strong>⚠ هذه الخدمة ليست استشارة ضريبية أو قانونية رسمية.</strong></p>
+          <p>المعلومات المقدمة في تقرير TaxCheck تُستخدم للإرشاد العام فقط، ولا تُعتبَر بديلاً عن استشارة مختص مرخّص. أي قرارات تتخذها بناءً على هذا التقرير تكون تحت مسؤوليتك الخاصة.</p>
+          <p class="last-updated">آخر تحديث: يناير 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container" style="text-align:center;">
+    <p>© 2025 Fintech Technologies FZ-LLC – Dubai, UAE</p>
+    <p>
+      <a href="terms.html">الشروط والأحكام</a> |
+      <a href="privacy.html">سياسة الخصوصية</a> |
+      <a href="refund.html">سياسة الاسترجاع</a>
+    </p>
+  </div>
+</footer>
+
+<a href="https://wa.me/971000000000" class="whatsapp-btn" target="_blank">
+  💬 استفسار سريع
+</a>
+
+</body>
+</html>
